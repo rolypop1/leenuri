@@ -1,0 +1,20 @@
+def exchange(a):
+    global b, c, d, e
+    b = a // 500
+    a = a % 500
+    c = a // 100
+    a = a % 100
+    d = a // 50
+    a = a % 50
+    e = a // 10
+
+def get_integer():
+    a = int(input('동전으로 교환하고자 하는 금액은? '))
+    return a
+
+exchange(get_integer())
+
+print('500원 동전의 개수: %d' % b)
+print('100원 동전의 개수: %d' % c)
+print('50원 동전의 개수: %d' % d)
+print('10원 동전의 개수: %d' % e)
