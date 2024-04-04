@@ -1,0 +1,8 @@
+discount = int(input('할인율은?'))
+a = int(input('A상품의 할인 전 가격은?'))
+b = int(input('B상품의 할인 전 가격은?'))
+def get_fixed_price(c):
+    price = c - c / 100 * discount
+    return price
+print('A 상품의 정가는 %d 원' % get_fixed_price(a))
+print('B 상품의 정가는 %d 원' % get_fixed_price(b))
