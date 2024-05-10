@@ -1,0 +1,14 @@
+shopping_bag = []
+count = []
+
+print('[구입]')
+while True:
+    item = input('상품명? ')
+    count = input('수량은? ')
+    if item == '':
+        break
+    shopping_bag.append(item)
+    count(count)
+    print(f'장바구니에 {item} {count}개가 담겼습니다.\n')
+
+print(f'\n>> 장바구니 보기: {shopping_bag}')
